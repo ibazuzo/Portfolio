@@ -1,0 +1,164 @@
+html {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    color: #5A5A5A;
+}
+
+body {
+    margin: 0;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list li {
+    float: left;
+}
+
+.list:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+nav {
+    float: right;
+    margin-top: 90px;
+}
+
+nav .list li a:hover {
+    /*    border-bottom: 2px solid red;*/
+    color: red;
+}
+
+nav .list li a {
+    text-decoration: none;
+    color: #5A5A5A;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+
+nav .list li {
+    margin-left: 20px;
+}
+
+nav .list li:first-child {
+    margin-left: 0;
+}
+
+.avatar {
+    float: left;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.top:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+header {
+    margin: 30px 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid img {
+    width: 291px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.grid img:hover {
+    opacity: 1;
+}
+.grid li {
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+.grid li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.grid li:nth-child(-n+4) {
+    margin-top: 0;
+}
+
+.legal {
+    margin: 30px 0;
+}
+
+.images-container {
+    width: 100%;
+}
+
+.images {
+    max-width: 900px;
+}
+
+.images img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.images img:last-child {
+    margin-bottom: 0;
+}
+
+.description {
+    width: 100%;
+    max-width: 280px;
+    position: fixed;
+    margin-left: 920px;
+}
+
+.details {
+    position: relative;
+}
+
+.details:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+h3 {
+    margin-top: 0;
+    /*    text-transform: uppercase;*/
+    letter-spacing: 0.1em;
+}
+
+.description p {
+    font-family: "Times New Roman", serif;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .description {
+        position: static;
+        float: right;
+        margin-left: 0;
+        width: 280px;
+    }
+    .images {
+        margin-left: 300px;
+        max-width: 100%;
+    }
+    .images-container {
+        float: left;
+        margin-left: -300px;
+    }
+}
+.contact h3 {
+    text-transform: uppercase;
+}
